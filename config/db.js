@@ -1,7 +1,7 @@
 'use strict'
 
 // creating a base name for the mongodb
-const mongooseBaseName = 'pbj-api-template'
+const mongooseBaseName = 'Bucket-List-API'
 
 // create the mongodb uri for development and test
 const database = {
