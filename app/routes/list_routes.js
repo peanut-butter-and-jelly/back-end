@@ -29,7 +29,7 @@ const router = express.Router()
 
 // GET => index
 router.get('/lists', requireToken, (req, res, next) => {
-  List.find()
+  List.find({ owner: req.user.id })
     .then(lists => {
       return lists.map(list => list.toObject())
     })
